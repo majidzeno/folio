@@ -3,10 +3,36 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: "Win";
+  src: url("../fonts/W95FA/w95fa.woff");
+}
+
+@font-face {
+  font-family: "OB";
+  src: url("../fonts/Oswald/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: "CR";
+  src: url("../fonts/Cairo/Cairo-Regular.ttf");
+}
+@font-face {
+  font-family: "RR";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "RM";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "RB";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Win;
 }
 article,
 aside,
