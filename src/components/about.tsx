@@ -26,9 +26,10 @@ const AboutComponents = () => {
   const iphoneRef = React.useRef(true)
   const ipadRef = React.useRef(true)
 
-  const tl = anime.timeline({})
-  const tl1 = anime.timeline({})
+  let tl, tl1
   React.useEffect(() => {
+    tl = anime.timeline({})
+    tl1 = anime.timeline({})
     tl.add({
       targets: avatarRef.current,
       translateX: ["140%", "0%"],
@@ -171,53 +172,7 @@ const AboutComponents = () => {
         delay: 500,
         autoplay: true,
       })
-    //   .add({
-    //     targets: messageRef9.current,
-    //     translateX: ["-200%", "0%"],
-    //     easing: "easeInOutSine",
-    //     duration: 500,
-    //     delay: 500,
-    //     autoplay: true,
-    //   })
-    //   .add({
-    //     targets: messageRef10.current,
-    //     translateX: ["-200%", "0%"],
-    //     easing: "easeInOutSine",
-    //     duration: 500,
-    //     delay: 500,
-    //     autoplay: true,
-    //   })
   }
-  //   const stopAnimate = () => {
-  //     console.log("removed")
-
-  //     anime.remove(avatarRef)
-  //     anime.remove(deviceRef)
-  //     anime.remove(btnRef)
-  //     anime.remove(iphoneRef)
-  //     anime.remove(ipadRef)
-  //     anime.remove(messageRef1)
-  //     anime.remove(messageRef2)
-  //     anime.remove(messageRef3)
-  //     anime.remove(messageRef4)
-  //     anime.remove(messageRef5)
-  //     anime.remove(messageRef6)
-  //     anime.remove(messageRef7)
-  //     anime.remove(messageRef8)
-  //     // avatarRef
-  //     // deviceRef
-  //     // messageRef1
-  //     // messageRef2
-  //     // messageRef3
-  //     // messageRef4
-  //     // messageRef5
-  //     // messageRef6
-  //     // messageRef7
-  //     // messageRef8
-  //     // btnRef
-  //     // iphoneRef
-  //     // ipadRef
-  //   }
   return (
     <Container>
       <StyledParticles
