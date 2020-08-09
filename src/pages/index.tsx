@@ -10,9 +10,7 @@ const IndexPage = () => {
   return (
     <Layout location="">
       <SEO title="Home" />
-
       <Landing />
-      {/* </Modal> */}
     </Layout>
   )
 }

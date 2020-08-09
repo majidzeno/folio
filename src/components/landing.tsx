@@ -123,6 +123,9 @@ const LandingWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  /* MOBILE */
+  @media (max-width: 1024px) {
+  }
 `
 
 const LandingContent: any = styled.div`
@@ -132,17 +135,29 @@ const LandingContent: any = styled.div`
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const Left = styled.div`
   padding-right: 10px;
   width: 50%;
   text-align: right;
+  @media (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
 `
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
 const Title = styled.h1`
   font-size: 90px;
@@ -150,6 +165,10 @@ const Title = styled.h1`
   font-family: OB;
   text-transform: uppercase;
   letter-spacing: 3px;
+  @media (max-width: 1024px) {
+    letter-spacing: normal;
+    text-align: center;
+  }
 `
 const Subtitle = styled.h2`
   font-size: 40px;
@@ -159,6 +178,9 @@ const Subtitle = styled.h2`
   span {
     color: red;
   }
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 `
 const Footer = styled.div`
   width: 40%;
@@ -166,6 +188,14 @@ const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 0;
+    a {
+      margin: 15px 0;
+    }
+  }
 `
 LandingContent.Title = Title
 LandingContent.Subtitle = Subtitle
